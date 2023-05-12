@@ -1,0 +1,17 @@
+{
+  "name": "css-framework",
+  "version": "1.0.0",
+  "description": "Since I needed to dive a little more into CSS to build the new version of my website, I now want to see how CSS frameworks are built and try to build one myself.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Laendrun",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}
