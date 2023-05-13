@@ -1,0 +1,23 @@
+.blockquote {
+	margin-bottom: $blockquote-margin-y;
+	font-size: $font-size-md;
+	font-weight: bold;
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
+.blockquote-footer {
+	margin-top: $blockquote-margin-y;
+	margin-bottom: $blockquote-margin-y;
+	color: $blockquote-footer-color;
+	font-size: $base-font-size;
+  
+	&::before {
+	  content: "\2014\00A0";
+	}
+}
+
+.text-center {
+	text-align: center;
+}

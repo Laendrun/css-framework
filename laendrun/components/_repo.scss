@@ -1,0 +1,95 @@
+.repo {
+	display: block;
+	padding: $base-padding;
+	border: $base-border-thickness * 2 solid map-get($colors, "gray");
+	border-radius: $base-border-radius * 0.25;
+
+	.repo-title {
+		margin-left: $base-font-size * 2;
+		margin-bottom: $base-font-size * 0.5;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+
+		> svg {
+			fill: black;
+			width: $base-font-size;
+		}
+	}
+
+	.repo-description {
+		margin-left: $base-font-size * 2;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.repo-info {
+		display: flex;
+		margin-left: $base-font-size * 2;
+		padding-top: $base-font-size * 0.5;
+
+		.repo-lang {
+			flex: 1;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+
+		.repo-stars {
+			flex: 1;
+			> svg {
+				fill: black;
+				width: $base-font-size;
+			}
+		}
+
+		.repo-forks {
+			flex: 1;
+			> svg {
+				fill: black;
+				width: $base-font-size;
+			}
+		}
+
+	}
+}
+
+
+
+// svg {
+// 	fill: black;
+// 	width: 1rem;
+// }
+// .repo-title {
+// 	margin-left: 2rem;
+// 	text-overflow: ellipsis;
+// 	overflow: hidden;
+// 	white-space: nowrap;
+// }
+// .repo-description {
+// 	width: 80%;
+// 	margin-left: 2rem;
+// }
+// .repo-description > p {
+// 	margin-top: 0.5rem;
+// 	overflow: hidden;
+// 	white-space: nowrap;
+// 	text-overflow: ellipsis;
+// }
+// .repo-info {
+// 	margin-left: 2rem;
+// 	display: flex;
+// }
+// .repo-lang {
+// 	width: 33%;
+// 	text-overflow: ellipsis;
+// 	overflow: hidden;
+// 	white-space: nowrap;
+// }
+// .repo-stars {
+// 	width: 33%;
+// }
+// .repo-forks {
+// 	width: 33%;
+// }

@@ -27,6 +27,10 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 	flex-flow: row wrap;
 }
 
+.row > * {
+	width: 100%;
+}
+
 // grid gaps
 @each $key, $val in $grid-gaps {
 	.gap-#{$key} > * {
@@ -47,6 +51,17 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // col classes
 // .col-xs-12 .col-md-6
+// .col-4
+
+@include breakpoint(0) {
+	@for $i from 1 through $grid-columns {
+		.col-#{$i} {
+			box-sizing: border-box;
+			flex-grow: 0;
+			width: math.div($i * 100%, $grid-columns);
+		}
+	}
+}
 
 @include xs {
 	@for $i from 1 through $grid-columns {
@@ -91,6 +106,16 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 @include xl {
 	@for $i from 1 through $grid-columns {
 		.col-xl-#{$i} {
+			box-sizing: border-box;
+			flex-grow: 0;
+			width: math.div($i * 100%, $grid-columns);
+		}
+	}
+}
+
+@include xxl {
+	@for $i from 1 through $grid-columns {
+		.col-xxl-#{$i} {
 			box-sizing: border-box;
 			flex-grow: 0;
 			width: math.div($i * 100%, $grid-columns);

@@ -1,4 +1,8 @@
 @each $key, $val in $colors {
+	.border-#{$key} {
+		border-color: $val
+	}
+
 	.text-#{$key} {
 		color: $val;
 	}

@@ -1,0 +1,15 @@
+hr {
+	border: none;
+	height: 1px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	background-color: #dddddd;
+}
+
+.rounded-full {
+	border-radius: 9999px;
+	display: inline-block;
+	position: relative;
+	height: $base-font-size;
+	width: $base-font-size;
+}

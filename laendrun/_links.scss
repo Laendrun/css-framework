@@ -1,0 +1,21 @@
+a {
+	all: unset;
+}
+
+a.link {
+	&[href^="http"] {
+		&:before {
+		content: "\2197\0020";
+		white-space: nowrap;
+		}
+	}
+}
+
+.link {
+	text-decoration: underline;
+}
+
+.link:hover {
+	cursor: pointer;
+	opacity: 50%;
+}

@@ -1,8 +1,8 @@
 // theme colors
 $primary: #326dee;
 $secondary: #1ac886;
-$error: #d32752;
-$info: #f6c31c;
+$error: #e61919;
+$info: #e6e619;
 
 // Color palettes
 $colors: (
@@ -11,8 +11,8 @@ $colors: (
 	"error": $error,
 	"info": $info,
 	"blue": #1919e6,
-	"red": #e61919,
-	"yellow": #e6e619,
+	"red": #bc2d37,
+	"yellow": #f0dd56,
 	"green": #19e635,
 	"orange": #ffa600,
 	"purple": #9900ff,
@@ -35,7 +35,13 @@ $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 
 // font-size
 $base-font-size: 1rem;
+$font-size-xs: $base-font-size * 0.5;
 $font-size-sm: $base-font-size * 0.75;
+$font-size-md: $base-font-size * 1.25;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;
+
+// blockquote
+$blockquote-margin-y: $base-margin;
+$blockquote-footer-color: map-get($colors, "gray");
