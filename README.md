@@ -14,7 +14,7 @@ Since web browsers don't understand `SCSS` directly as they do with `CSS`, we ha
 
 To do that, in my and the tutorial case, we use the task runner `gulp`.
 
-### Installation
+### Installation
 
 1. You have to have `node` installed on your computer.
 2. Go in the project folder and run `npm install`
